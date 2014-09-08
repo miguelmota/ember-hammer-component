@@ -1,0 +1,16 @@
+{
+  "name": "ember-hammer-component",
+  "main": "ember-hammer-component.js",
+  "version": "0.0.1",
+  "authors": [
+    "Miguel Mota <miguelmota2@gmail.com>"
+  ],
+  "description": "Ember.js Hammer.js component",
+  "keywords": [
+    "ember",
+    "hammer",
+    "component"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/miguelmota/ember-hammer-component"
+}
