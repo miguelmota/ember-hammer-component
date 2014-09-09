@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default EmberHammerComponent.extend({
 
   init: function() {
-    this.set('el', $('.box'));
+    this._super();
   },
 
   gestures: {

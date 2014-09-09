@@ -3,7 +3,8 @@
     "document": true,
     "window": true,
     "-Promise": true,
-    "AppENV": true
+    "AppENV": true,
+    "Hammer", true
   },
   "browser" : true,
   "boss" : true,
