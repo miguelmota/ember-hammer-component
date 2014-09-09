@@ -52,7 +52,7 @@
             hammerManager.get(type).recognizeWith(g.event);
           }
 
-          hammerManager.on((g.event ? g.event : type.toLowerCase()), eventCallback(eType, g.callback));
+          hammerManager.on((g.event ? type : type.toLowerCase()), eventCallback(eType, g.callback));
 
         } else if (Ember.typeOf(gestures[type]) === 'function') {
           hammerInstance.on(type.toLowerCase(), eventCallback(type, g));
