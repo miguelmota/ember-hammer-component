@@ -1,5 +1,13 @@
 # Ember Hammer Component
 
+# Install
+
+```bash
+bower install ember-hammer-component
+```
+
+# Example
+
 ```javascript
 import Ember from 'ember';
 
@@ -9,41 +17,16 @@ export default EmberHammerComponent.extend({
   },
 
   gestures: {
-    tap: function(event) {
-      console.log(event.type); // tap
+    pan: function(event) {
+      console.log(event.type);
     },
-    panleft: function(event) {
-      console.log(event.type); // panleft
-    }
-  }
 
-});
-```
-
-#### Hammer manager
-
-```javascript
-import Ember from 'ember';
-
-export default EmberHammerComponent.extend({
-
-  init: function() {
-    this.set('el', $('.my-element'));
-  },
-
-  gestures: function() {
-    return {
-      tripleTap: {
-        event: 'tap',
-        options: {taps: 3},
-        callback: function(event) {
-          console.log(event.type); // tripleTap
-        }
-      },
-      pan: {
-        callback: function(event) {
-          console.log(event.type); // pan
-        }
+    // Hammer Manager
+    tripleTap: {
+      event: 'tap',
+      options: {taps: 3},
+      callback: function(event) {
+        console.log(event.type);
       }
     }
   }
